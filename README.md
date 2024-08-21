@@ -24,26 +24,12 @@ This repository contains REST API Testing using Postman, focusing on the Pet Sto
 
 **Endpoint:** `POST https://petstore.swagger.io/v2/user`
 
-```bash
-curl -X 'POST' \
-  'https://petstore.swagger.io/v2/user' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "id": 0,
-  "username": "john",
-  "firstName": "john",
-  "lastName": "Ripper",
-  "email": "john@gmail.com",
-  "password": "johnpass",
-  "phone": "9482929592",
-  "userStatus": 1
-}'
-
-
-
 Request Headers:
 
 accept: application/json
 Content-Type: application/json
 Request Body (JSON):
+
+
+
+
