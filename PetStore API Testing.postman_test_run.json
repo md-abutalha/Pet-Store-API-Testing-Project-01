@@ -1,0 +1,146 @@
+{
+	"id": "d39391df-d13e-4859-9919-0fda6e3f925f",
+	"name": "PetStore API Testing",
+	"timestamp": "2024-08-21T06:15:22.382Z",
+	"collection_id": "37041522-08bb2748-399e-444b-9c96-a78bbbb6a2d9",
+	"folder_id": 0,
+	"environment_id": "37041522-a66837fa-ee99-4a35-8ff9-a0f3769b6c2f",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-21T06:15:20.467Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d74823d0-f2ec-4dd5-b674-ef9c7e2b68fa",
+			"name": "CreateUser",
+			"url": "https://petstore.swagger.io/v2/user",
+			"time": 325,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"status code": true
+			},
+			"testPassFailCounts": {
+				"status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				325
+			],
+			"allTests": [
+				{
+					"status code": true
+				}
+			]
+		},
+		{
+			"id": "0c3f75e1-6929-48f6-b7e1-5084f730d56c",
+			"name": "Get_user_by_ID",
+			"url": "https://petstore.swagger.io/v2/user/17",
+			"time": 341,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify the status code": true
+			},
+			"testPassFailCounts": {
+				"Verify the status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				341
+			],
+			"allTests": [
+				{
+					"Verify the status code": true
+				}
+			]
+		},
+		{
+			"id": "2e3f6b19-d70c-4d3b-a91b-099a5ac705af",
+			"name": "Update_user_by_ID",
+			"url": "https://petstore.swagger.io/v2/user/17",
+			"time": 343,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify the status code": true
+			},
+			"testPassFailCounts": {
+				"Verify the status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				343
+			],
+			"allTests": [
+				{
+					"Verify the status code": true
+				}
+			]
+		},
+		{
+			"id": "7470f272-91cb-431d-9a1f-710fb78813b3",
+			"name": "Delete_by_ID",
+			"url": "https://petstore.swagger.io/v2/user/17",
+			"time": 332,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify the status code": true
+			},
+			"testPassFailCounts": {
+				"Verify the status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				332
+			],
+			"allTests": [
+				{
+					"Verify the status code": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1341,
+	"collection": {
+		"requests": [
+			{
+				"id": "d74823d0-f2ec-4dd5-b674-ef9c7e2b68fa",
+				"method": "POST"
+			},
+			{
+				"id": "0c3f75e1-6929-48f6-b7e1-5084f730d56c",
+				"method": "GET"
+			},
+			{
+				"id": "2e3f6b19-d70c-4d3b-a91b-099a5ac705af",
+				"method": "PUT"
+			},
+			{
+				"id": "7470f272-91cb-431d-9a1f-710fb78813b3",
+				"method": "DELETE"
+			}
+		]
+	}
+}
