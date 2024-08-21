@@ -1,6 +1,7 @@
 # Pet Store API Testing Project
 
-This is a **Pet-Store-API-Testing-Project-01**.  
+ 
+**Pet-Store-API-Testing-Project-01**.  
 [![Postman](https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg)](https://www.postman.com/)
 
 This repository contains REST API Testing using Postman, focusing on the Pet Store API. It includes scripts for testing both JSON and XML data formats, demonstrating how to create, retrieve, update, and delete users and pets via the Pet Store API.
