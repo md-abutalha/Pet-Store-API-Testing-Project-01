@@ -169,8 +169,9 @@ Endpoint: DELETE https://petstore.swagger.io/v2/pet/{{petid}}
 Published Documentation
 JSON Testing Documentation: https://documenter.getpostman.com/view/37041522/2sA3sAi8PA
 XML Testing Documentation: https://documenter.getpostman.com/view/37041522/2sAXjDdEfh
-This project is intended to demonstrate API testing using Postman. Feel free to clone this repository and adapt the tests to your own API testing needs.
+
+This project is intended to demonstrate API testing using Postman.
+Feel free to clone this repository and adapt the tests to your own API testing needs.
 
 Md. Abu Talha
-GitHub Profile
 E-Mail: abutalha03333@gmail.com
