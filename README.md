@@ -22,9 +22,9 @@ This repository contains REST API Testing using Postman, focusing on the Pet Sto
 
 Here are the important websites:
 
-Pet Store Swagger UI: https://petstore.swagger.io/#/pet/addPet
-JSON Pathfinder: https://jsonpathfinder.com/
-XML to JSON Formatter: https://jsonformatter.org/xml-to-json
+-Pet Store Swagger UI: https://petstore.swagger.io/#/pet/addPet
+-JSON Pathfinder: https://jsonpathfinder.com/
+-XML to JSON Formatter: https://jsonformatter.org/xml-to-json
 
 ### Create User
 
