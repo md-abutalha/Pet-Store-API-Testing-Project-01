@@ -23,13 +23,39 @@ This repository contains REST API Testing using Postman, focusing on the Pet Sto
 ### Create User
 
 **Endpoint:** `POST https://petstore.swagger.io/v2/user`
-@@@@@
+
+curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "username": "john",
+  "firstName": "john",
+  "lastName": "Ripper",
+  "email": "john@gmail.com",
+  "password": "johnpass",
+  "phone": "9482929592",
+  "userStatus": 1
+}'
+
 Request Headers:
 
 accept: application/json
 Content-Type: application/json
 Request Body (JSON):
-@@@@@@@@
+
+{
+  "id": {{id}},
+  "username": "{{username}}",
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "phone": "{{phone}}",
+  "userStatus": {{userStatus}}
+}
+
 
 Get User by ID
 Endpoint: GET https://petstore.swagger.io/v2/user/{{id}}
@@ -39,7 +65,17 @@ Endpoint: PUT https://petstore.swagger.io/v2/user/{{id}}
 
 Request Body (JSON): 
 
-@@@@@
+{
+  "id": {{id}},
+  "username": "{{username}}",
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "phone": "{{phone}}",
+  "userStatus": {{userStatus}}
+}
+
 
 Delete User by ID
 Endpoint: DELETE https://petstore.swagger.io/v2/user/{{id}}
@@ -48,7 +84,31 @@ XML Testing
 Add New Pet
 Endpoint: POST https://petstore.swagger.io/v2/pet
 
-@@@@@
+curl -X 'POST' \
+  'https://petstore.swagger.io/v2/pet' \
+  -H 'accept: application/xml' \
+  -H 'Content-Type: application/xml' \
+  -d '
+<?xml version="1.0" encoding="UTF-8"?>
+<Pet>
+  <id>0</id>
+  <Category>
+    <id>0</id>
+    <name>string</name>
+  </Category>
+  <name>doggie</name>
+  <photoUrls>
+    <photoUrl>string</photoUrl>
+  </photoUrls>
+  <tags>
+    <Tag>
+      <id>0</id>
+      <name>string</name>
+    </Tag>
+  </tags>
+  <status>available</status>
+</Pet>'
+
 
 Request Headers:
 
@@ -56,7 +116,26 @@ Request Headers:
 - Content-Type: application/xml
 Request Body (XML):
 
-@@@@@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pet>
+  <id>0</id>
+  <Category>
+    <id>0</id>
+    <name>string</name>
+  </Category>
+  <name>doggie</name>
+  <photoUrls>
+    <photoUrl>string</photoUrl>
+  </photoUrls>
+  <tags>
+    <Tag>
+      <id>0</id>
+      <name>string</name>
+    </Tag>
+  </tags>
+  <status>available</status>
+</Pet>
+
 
 Find Pet by ID
 Endpoint: GET https://petstore.swagger.io/v2/pet/{{petid}}
@@ -66,7 +145,26 @@ Endpoint: PUT https://petstore.swagger.io/v2/pet
 
 Request Body (XML):
 
-@@@@@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pet>
+  <id>{{petid}}</id>
+  <Category>
+    <id>0</id>
+    <name>string</name>
+  </Category>
+  <name>tommy</name>
+  <photoUrls>
+    <photoUrl>string</photoUrl>
+  </photoUrls>
+  <tags>
+    <Tag>
+      <id>0</id>
+      <name>string</name>
+    </Tag>
+  </tags>
+  <status>available</status>
+</Pet>
+
 
 Delete Pet
 Endpoint: DELETE https://petstore.swagger.io/v2/pet/{{petid}}
@@ -75,7 +173,6 @@ Published Documentation
 JSON Testing Documentation: https://documenter.getpostman.com/view/37041522/2sA3sAi8PA
 XML Testing Documentation: https://documenter.getpostman.com/view/37041522/2sAXjDdEfh
 
-@@@@
 
 This project is intended to demonstrate API testing using Postman. Feel free to clone this repository and adapt the tests to your own API testing needs.
 
